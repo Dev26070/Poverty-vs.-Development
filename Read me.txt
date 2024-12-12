@@ -1,0 +1,95 @@
+Overview
+
+This project is a Python-based interactive web dashboard built using Dash and Plotly. It visualizes the relationships between poverty, GDP per capita, the Human Development Index (HDI), and life expectancy, enabling users to explore development indicators across countries.
+
+Features
+
+Scatter Plot of Poverty Rate vs. GDP Per Capita: Visualize how economic output correlates with poverty rates.
+
+Scatter Plot of Poverty Rate vs. Human Development Index: Understand the relationship between human development and poverty.
+
+Scatter Plot of Poverty Rate vs. Life Expectancy: Examine how life expectancy impacts poverty rates.
+
+Scatter Plot of GDP Per Capita vs. Human Development Index: Explore the link between economic output and human development.
+
+Prerequisites
+
+To run this project, you need the following:
+
+Python 3.7+
+
+Required Python libraries:
+
+dash
+
+dash-core-components
+
+dash-html-components
+
+plotly
+
+pandas
+
+A dataset file named poverty_development_data.csv in the same directory as the script. The dataset should contain the following columns:
+
+Country: Names of countries
+
+GDP_Per_Capita: GDP per capita values
+
+Poverty_Rate: Percentage of the population living below the poverty line
+
+Human_Development_Index: HDI scores for countries
+
+Life_Expectancy: Average life expectancy values
+
+Installation
+
+Clone or download the repository.
+
+Install the required Python libraries using pip:
+
+pip install dash plotly pandas
+
+Ensure the poverty_development_data.csv file is present in the project directory.
+
+Running the App
+
+Navigate to the project directory.
+
+Run the Python script:
+
+python app.py
+
+Open your web browser and go to http://127.0.0.1:8050/ to view the dashboard.
+
+File Structure
+
+app.py: The main Python script containing the dashboard code.
+
+poverty_development_data.csv: Dataset file used for visualization.
+
+Customization
+
+You can customize the dashboard by:
+
+Adding new graphs or modifying existing ones in the app.layout section.
+
+Using additional Plotly Express charts for other relationships or datasets.
+
+Updating dataset columns or filtering data as needed.
+
+Troubleshooting
+
+"FileNotFoundError: [Errno 2] No such file or directory: 'poverty_development_data.csv'": Ensure the dataset file is in the same directory as the script.
+
+Dashboard does not load in the browser: Verify that the app is running and the correct URL (http://127.0.0.1:8050/) is being accessed.
+
+Missing libraries: Install missing dependencies using pip.
+
+License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
+
+Acknowledgements
+
+Special thanks to the creators of Dash, Plotly, and Pandas for providing the tools that made this project possible.
